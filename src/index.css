@@ -1,0 +1,106 @@
+.todoarea * {
+    box-sizing: border-box;
+}
+
+.todoarea {
+    position: relative;
+    width: 350px;
+    display: grid;
+    grid-template-areas: 
+    'todoheader'
+    'todoaddnew'
+    'taskstodo';
+    grid-template-rows: 50px auto auto;
+    border-style: outset;
+    border-width: 2px;
+}
+
+.todoheader {
+    grid-area: todoheader;
+    background-color: rgb(20, 113, 201);
+    color: white;
+    text-align: center;
+}
+
+.todoaddnew {
+    grid-area: todoaddnew;
+    background-color: azure;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    border-bottom: 4px;
+    border-bottom-style: ridge;
+}
+
+.todoaddnew input[type='submit'] {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.todoaddnew textarea, .singletaskcontainer textarea {
+    resize: vertical;
+    margin-top: 4px;
+    width: 300px;
+}
+
+.todoaddnew input[type='text'] {
+    width: 300px;
+    height: 30px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.noselection {
+    user-select: none;
+}
+
+.noselection:hover {
+    cursor: pointer;
+}
+
+.taskstodo {
+    grid-area: taskstodo;
+    background-color: azure;
+}
+
+.singletaskcontainer fieldset {
+    margin-bottom: 5px;
+}
+
+.singletaskcontainer input[type='submit'] {
+    margin-top: 10px;
+}
+
+.singletaskcontainer {
+    border-bottom: 4px;
+    border-bottom-style: ridge;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.singletaskcontainer:last-child {
+    border-bottom: none;
+}
+
+.evenbuttondistribution {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.evenbuttondistribution input[type='button'], .evenbuttondistribution input[type='submit'] {
+    height: 32px;
+}
+
+.evenbuttondistribution input[type='submit'] {
+    transform: translateY(-10px);
+}
+
+.bg-red {
+    background-color: lightpink;
+}
+
+.bg-green {
+    background-color: lightgreen;
+}
